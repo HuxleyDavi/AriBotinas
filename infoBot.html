@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="css/styleInfoBot.css" rel="stylesheet">
     <title>Ari Botinas</title>
 </head>
@@ -18,7 +20,7 @@
             </div><!--logo-->
             <div class="desktop">
                 <ul>
-                    <li><a href="">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="#prod">Produtos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -28,38 +30,58 @@
         </div><!--container-->
     </header>
 
-    <section class="contato" id="contato">
+    <section class="produtos">
+        <div class="carro-wrapper">
+            <div class="carrosel">
+                <img src="images/bot.png">
+                <img src="images/bot1.png">
+                <img src="images/bot2.png">
+                <img src="images/bot3.png">
+                <img src="images/bot4.png">
+            </div><!--carrosel-->
+        </div><!--carro-warpper-->
+
         <div class="container">
+            <div class="prod-wrapper">
 
-            <div class="title-wrapper">
-                <div class="line-title">
-                    <div class="title">
-                        <h1>Contato</h1>
-                    </div><!--title-->
-                </div><!--line-title-->
-            </div><!--title-wrapper-->
+                <div class="prod-info">
+                    <h2>Botina Segurança</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula, mi at aliquam cursus, dolor ante vehicula quam, egestas porttitor dolor metus eget urna. Mauris urna libero, maximus sed condimentum ut, malesuada in urna. Curabitur leo orci, condimentum ac libero non, euismod cursus velit. Cras nisi orci, vehicula rutrum ultrices imperdiet, scelerisque non nunc. Proin ultrices semper venenatis. Curabitur fermentum, diam ut cursus lobortis, enim justo tincidunt enim, vel interdum felis libero a ligula. Vestibulum luctus et ultrices posuere cubilia curae; Praesent lacinia pretium nisi, at condimentum lacus consectetur vel.
+                    </p>
+                </div><!--prod-info-->
 
-            <div class="contato-wrapper">
+                <div class="prod-big">
+                    <div class="prod-big-image">
+                        <img src="images/bot.png" />
+                    </div><!--prod-single-image-->
 
-                <form action="https://formsubmit.co/huxdavi@gmail.com" method="POST">
-                    <input required type="text" name="name" placeholder="Nome..." />
-                    <input required type="text" name="telefone" id="telefone" placeholder="Telefone..." maxlength="15"/>
-                    <input required type="email" name="email" placeholder="E-mail..." />
-                    <textarea name="message" placeholder="Deixe sua mensagem... (Opcional)"></textarea>
-                    <input class="end" type="submit" name="button" value="Enviar" />
-                    <!--Form Submit-->
-                    <input type="hidden" name="_next" value="">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="_honey" style="display:none">
-                    <!--<input type="hidden" name="_cc" value="hs.corpp@gmail.com">-->
-                    <input type="hidden" name="_subject" value="Nova mensagem!">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="">
-                </form>
-                
-            </div>
-        </div>
-    </section>
+                    <div class="prod-big-pagamento">
+                        <h6>Meios de pagamento</h6>
+                        <button><a href="">Compre aqui</a></button>
+                    </div><!--prod-big-pagamento-->
+                </div><!--prod-big-->
+
+                <div class="prod-pagamento">
+                    <div class="prod-pagamento-wrapper">
+
+                        <div class="prod-pagamento-single">
+                            <img src="images/whatsapp.png" >
+                        </div>
+
+                        <div class="prod-pagamento-single">
+                            <img src="images/instagram.png" >
+                        </div>
+
+                        <div class="prod-pagamento-single">
+                            <img src="images/telefone.png" >
+                        </div>
+
+                    </div><!--prod-pagamento-wrapper-->
+                </div><!--prod-pagamento-->
+
+            </div><!--prod-wrapper-->
+        </div><!--container-->
+    </section><!--produtos-->
 
     <section class="footer">
         <div class="container">
@@ -68,17 +90,21 @@
                 <div class="footer-single-direitos">
                     <div class="footer-text">
                         <p>Todos os diretos reservados &copy;</p>
-                    </div>
-                </div>
+                    </div><!--footer-text-->
+                </div><!--footer-single-direitos-->
 
                 <div class="footer-single-hs">
                     <div class="footer-text">
                         <p><b><a href="">HS CORP</a></b></p>
-                    </div>
-                </div>
+                    </div><!--footer-text-->
+                </div><!--footer-single-hs-->
 
-            </div>
-        </div>
-    </section>
+            </div><!--footer-wrapper-->
+        </div><!--container-->
+    </section><!--footer-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slides.js"></script>
 </body>
 </html>
