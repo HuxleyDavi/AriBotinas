@@ -31,7 +31,7 @@ header{
 .logo y{color: #008037;}
 .logo z{color: #e73434;}
 */
-.logo h2{color: white;font-size: 25px;padding-top: 10px;}
+.logo h2{color: black;font-size: 25px;padding-top: 10px;}
 
 .desktop{
     display: flex;
@@ -40,72 +40,13 @@ header{
 }
 .desktop ul{list-style-type: none;padding-top: 22px;}
 .desktop ul li{display: inline-block;margin-left: 25px;}
-.desktop ul li a{color: white;font-size: 17px;text-decoration: none;}
-
-/***/
-
-/*BG*/
-
-section.bg > .container{max-width: 100%;padding: 0;}
-.bg-wrapper{width: 100%;height: 100vh;}
-
-.overlay{
-    opacity: 1;
-    background-color: black;
-    height: 100%;
-    z-index: 999;
-}
-
-.bg-img{
-    position: relative;
-    opacity: 0.6;
-    background-image: url('../images/bg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-}
-
-.bg-text{position: absolute;top: 60%;left: 10%;color: white;text-shadow: 0 0 40px #323232;}
-.bg-text h3{
-    font-size: 36px;
-    margin-bottom: -8px;
-}
-.bg-text h3{
-    font-size: 36px;
-    margin-bottom: -6px;
-}
-.bg-text p{
-    font-size:22px;
-    margin-bottom: 3px;
-}
-.bg-text form > input{
-    padding: 5px;
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.650);
-}
-.bg-text form > input[type=submit]{
-    cursor: pointer;
-}
-/*.bg-text button{
-    padding: 6.5px 0;
-    background-color: white;
-    border: 1px solid #323232;
-    border-radius: 10px;
-}
-.bg-text button a{
-    padding: 6.5px 40px;
-    text-decoration: none;
-    color: black;
-    font-size: 13px;
-}*/
+.desktop ul li a{color: black;font-size: 17px;text-decoration: none;}
 
 /***/
 
 /*PRODUTOS*/
 
-section.prod{padding: 30px;}
+section.prod{padding: 70px;}
 .prod-wrapper{
     margin-top: 80px;
     display: flex;
