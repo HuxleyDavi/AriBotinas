@@ -1,0 +1,211 @@
+/*<!--//--------------------------By HS Corp-------------------------------//-->
+<!--//---------------------------@hs.corp-------------------------------//-->
+<!--//-----------------------hscorpp@gmail.com-------------------------------//-->*/
+/*ESTILOS GERAIS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Open Sans', sans-serif;}
+body,html{height: 100%;scroll-behavior: smooth;}
+.container{max-width: 1300px;margin: 0 auto;padding: 0 2%;}
+.clear{clear: both;}
+.title-wrapper{text-align: center;margin-top: 30px;width: 100%;}
+.line-title{position: relative;width: 100%;height: 3px;background-color: black;display: inline-block;}
+.title{font-size: 20px;width: 200px;color: black;background-color: white;position: absolute;top: -25px;left: 0px;}
+
+/***/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .footer-wrapper {
+    flex: 1 0 auto;
+  }
+
+/***/
+
+/*HEADER*/
+
+header{
+    z-index: 999;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+.logo{float: left;}
+.logo a{color: black; text-decoration: none;}
+.logo h2{color: black;font-size: 25px;}
+
+.desktop{float: right;}
+.desktop ul{list-style-type: none;padding-top: 27px;}
+.desktop ul li{display: inline-block;margin-left: 25px;}
+.desktop ul li a{color: black;font-size: 17px;text-decoration: none;}
+
+/***/
+
+/*CARROSEL*/
+
+section.produtos{
+    padding-top: 50px;
+}
+
+.carro-wrapper{
+    width: 100%;
+    /*background-color: #323232;*/
+}
+
+.carrosel{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carrosel img{
+    padding: 10px;
+    width: 100px;
+    height: 250px;
+}
+
+/***/
+
+/**ESTILOS PLUGIN SLICK**/
+
+.slick-dotted ul{
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.slick-dotted li{
+    display: inline-block;
+    margin:0 7px;
+}
+
+.slick-dotted button:focus{
+    outline: 0;
+}
+
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #cacaca;
+    border-width: 0;
+    background: #cacaca;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button{
+    background: black;
+    color: black;
+}
+
+.slick-slide:focus{outline: none;}
+
+/**FIM ESTILOS PLUCGIN SLICK**/
+
+/**PRODUTOS WRAPPER**/
+
+.prod-wrapper{
+    /*
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid: 100px auto;
+    -
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.prod-big-image img{
+    border: 10px solid rgba(187, 187, 187, 0.322);
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+}
+
+.prod-big-pagamento{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.prod-big-pagamento button{
+    padding: 10px;
+}
+
+.prod-big-pagamento button a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.prod-pagamento-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prod-pagamento-single{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.prod-pagamento-single i{
+    margin-top: 25px;
+    font-size: 50px;
+}
+
+.prod-pagamento-single a{
+    color: black;
+}
+
+
+
+/**PRODUTOS WRAPPER**/
+
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+.footer-text{
+    color: rgb(212, 211, 211);
+    text-align: center;
+}
+
+.footer-text p{
+    font-size: 15px;
+}
+
+.footer-text p > b{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.footer-text p > b > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/***/
+/*<!--//--------------------------By HS Corp-------------------------------//-->
+<!--//---------------------------@hs.corp-------------------------------//-->
+<!--//-----------------------hscorpp@gmail.com-------------------------------//-->*/
