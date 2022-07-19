@@ -344,6 +344,20 @@ li.slick-active button{
     text-decoration: none;
 }
 
+@media screen and (max-width: 768px){
+    .prod-big-image img{
+        width: 90%;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .prod-big-image img{
+        width: 100%;
+        height: 400px;
+    }
+}
+
 /***/
 /*<!--//--------------------------By HS Corp-------------------------------//-->
 <!--//---------------------------@hs.corp-------------------------------//-->

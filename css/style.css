@@ -211,10 +211,6 @@ section.bg > .container{max-width: 100%;padding: 0;}
     font-size: 36px;
     margin-bottom: -8px;
 }
-.bg-text h3{
-    font-size: 36px;
-    margin-bottom: -6px;
-}
 .bg-text p{
     font-size:22px;
     margin-bottom: 3px;
@@ -353,12 +349,38 @@ section.contato{
 @media screen and (max-width: 768px){
     .desktop{display: none;}
     .mobile{display: block;}
+    .contato-wrapper{width: 90%;}
+
+    .prod-text-bottom-text a{
+        display: block;
+        margin-top: 20px;
+        margin-left: 0;
+        padding-top: 0;
+        padding: 10px 30px;
+    }
 }
 
 @media screen and (max-width: 500px){
     .sidebar{width: 18rem;}
     .menu{position: absolute;top: 40%;left: 55%;}
     .show-menu .hamburguer{right: 15rem;}
+
+    .bg-text{left: 6%;}
+
+    .bg-text h3{
+        font-size: 25px;
+        margin-bottom: -4px;
+    }
+    .bg-text p{
+        font-size:19px;
+    }
+    .bg-text form > input{
+        padding: 3px;
+    }
+
+    .bg-wrapper > a{
+        margin-top: -100px;
+    }
 }
 
 /***/
