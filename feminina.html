@@ -17,25 +17,34 @@
     <header>
         <div class="container">
 
+            <div class="hamburguer">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <span>Fechar</span>
+            </div><!-- hamburguer -->
+
             <div class="logo">
                 <img src="" />
                 <a href="index.html"><h2>Aristóteles Botinas</h2></a>
             </div><!--logo-->
-            <div class="desktop">
-                <ul class="dropdown-menu">
-                    <li><a href="index.html">Início</a></li>
-                    <li>
-                        <a href="#">Produtos &#9660</a>
-                        <ul class="dropdown-submenu">
-                            <li><a href="infantil.html">Infantil</a></li>
-                            <li><a href="adulto.html">Adulto</a></li>
-                            <li><a href="texana.html">Texana</a></li>
-                            <li><a href="country.html">Country</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div><!--desktop-->
+
+            <asside class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html" class="menu-link">Início</a></li>
+                        <li class="menu-item"><a href="adulto.html" class="menu-link">Adulto</a></li>
+                        <li class="menu-item"><a href="infantil.html" class="menu-link">Infantil</a></li>
+                        <li class="menu-item"><a href="contato.html" class="menu-link">Contato</a></li>
+                    </ul><!-- menu -->
+                </nav>
+    
+                <div class="social-media">
+                    <a href="https://api.whatsapp.com/send?phone=5533998023970&text=Ol%C3%A1%2C%20poderia%20me%20ajudar%3F" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/ari_botinas/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a  href="tel://5533998023970" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                </div>
+            </asside><!-- sidebar -->
 
         <div class="clear"></div>
         </div><!--container-->
@@ -220,6 +229,8 @@
         </div>
     </section>
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/menuMobile.js"></script>
 </body>
 </html>
 

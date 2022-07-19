@@ -2,31 +2,11 @@
 <!--//---------------------------@hs.corp-------------------------------//-->
 <!--//-----------------------hscorpp@gmail.com-------------------------------//-->*/
 
-$(".carrosel").slick({
-	dots: true,
-	centerMode: true,
-	slidesToShow: 3,
-	arrows: false,
-	responsive:[
+//Menu responsivo -------
 
-		{
-			breakpoint:768,
-			settings:{
-				centerMode:true,
-				slidesToShow:2
-			}
-		},
-
-		{
-			breakpoint:580,
-			settings:{
-				arrows:false,
-				centerMode:true,
-				slidesToShow:1
-			}
-		},
-	]
-});
+document.querySelector(".hamburguer").addEventListener("click", () =>
+    document.querySelector(".container").classList.toggle("show-menu")
+);
 
 /*<!--//--------------------------By HS Corp-------------------------------//-->
 <!--//---------------------------@hs.corp-------------------------------//-->
