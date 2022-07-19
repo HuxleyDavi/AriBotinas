@@ -197,7 +197,7 @@ section.bg > .container{max-width: 100%;padding: 0;}
 
 .bg-img{
     position: relative;
-    opacity: 0.6;
+    opacity: 0.8;
     background-image: url('../images/bg.jpg');
     background-position: center;
     background-size: cover;
