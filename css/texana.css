@@ -259,6 +259,8 @@ section.contato{
 /*FOOTER*/
 
 .footer{
+	position: absolute;
+	bottom: 0;
     width: 100%;
     padding: 10px;
     background-color: #1f1f1f;
@@ -284,6 +286,13 @@ section.contato{
 }
 
 /***/
+
+@media screen and (max-width: 768px){
+    .social-media{
+        bottom: 6rem;
+    }
+}
+
 /*<!--//--------------------------By HS Corp-------------------------------//-->
 <!--//---------------------------@hs.corp-------------------------------//-->
 <!--//-----------------------hscorpp@gmail.com-------------------------------//-->*/
