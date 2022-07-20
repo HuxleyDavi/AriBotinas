@@ -349,6 +349,7 @@ li.slick-active button{
         width: 90%;
         height: 500px;
     }
+    .social-media{bottom: 6rem;}
 }
 
 @media screen and (max-width: 500px){
