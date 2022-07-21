@@ -1,0 +1,365 @@
+/*<!--//--------------------------By HS Corp-------------------------------//-->
+<!--//---------------------------@hs.corp-------------------------------//-->
+<!--//-----------------------hscorpp@gmail.com-------------------------------//-->*/
+/*ESTILOS GERAIS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Open Sans', sans-serif;}
+body,html{height: 100%;scroll-behavior: smooth;}
+.container{max-width: 1300px;margin: 0 auto;padding: 0 2%;}
+.clear{clear: both;}
+.title-wrapper{text-align: center;margin-top: 30px;width: 100%;}
+.line-title{position: relative;width: 100%;height: 3px;background-color: black;display: inline-block;}
+.title{font-size: 20px;width: 200px;color: black;background-color: white;position: absolute;top: -25px;left: 0px;}
+
+/***/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .footer-wrapper {
+    flex: 1 0 auto;
+  }
+
+/***/
+
+/*HEADER*/
+
+header{
+    z-index: 999;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+.logo{float: left;}
+.logo a{color: black; text-decoration: none;}
+.logo h2{color: black;font-size: 25px;}
+
+/***/
+
+.hamburguer{
+	/*background-color: red;*/
+	width: 2rem;
+	height: 2rem;
+	position: fixed;
+	z-index: 100;
+	right: 2rem;
+	top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+
+.show-menu .hamburguer{
+	right: 16rem;
+}
+
+.line{
+	width: 100%;
+	height: .1rem;
+	background-color: white;
+	box-shadow: 0.1rem 0.1rem 1px;
+	transition: all 1s;
+}
+
+.show-menu #line1{
+	transform: rotate(45deg) translate(.3rem, .3rem);
+}
+
+.show-menu #line2{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.show-menu #line3{
+	transform: rotate(-45deg) translate(.3rem, -.3rem);
+}
+
+.hamburguer span{
+	position: absolute;	
+	left: 3rem;
+	height: 2rem;
+	width: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #3f3f3f;
+	color: #fff;
+	font-family: var(--font-action);
+	opacity: 0;
+	transition: all 0.6s;
+}
+
+.hamburguer span::before{
+	content: "";
+	position: absolute;
+	border-right: .5rem solid #3f3f3f;
+	border-top: .5rem solid transparent;
+	border-left: .5rem solid transparent;
+	border-bottom: .5rem solid transparent;
+	left: -1rem;
+}
+
+.show-menu .hamburguer:hover span{
+	opacity: 1;
+}
+
+/***/
+
+.sidebar{
+	width: 20rem;
+	height: 100vh;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	right: -20rem;
+	transition: all 1s;
+	z-index: 99;
+}
+
+.show-menu .sidebar{
+	right: 0;
+}
+
+.menu{
+    list-style: none;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu-item{
+	text-align: center;
+	padding: .5rem;
+}
+
+.menu-link{
+    text-decoration: none;
+	font-family: var(--font-action);
+	font-size: 2rem;
+	color: #555;
+	transition: color 1s;
+}
+
+.menu-link:hover{
+	color: rgb(102, 102, 102);
+}
+
+.social-media{
+	position: absolute;
+	bottom: 2rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.social-media a{text-decoration: none;}
+
+.social-media i{
+	background-color: #3f3f3f;;
+	color: rgba(255, 255, 255, 1);
+	height: 2.5rem;
+	width: 2.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: background-color 1s;
+}
+
+.social-media i:hover{
+	background-color: rgb(102, 102, 102);
+}
+
+/***/
+
+/*CARROSEL*/
+
+section.produtos{
+    padding-top: 50px;
+}
+
+.carro-wrapper{
+    width: 100%;
+    /*background-color: #323232;*/
+}
+
+.carrosel{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carrosel img{
+    padding: 10px;
+    width: auto;
+    height: 280px;
+}
+
+/***/
+
+/**ESTILOS PLUGIN SLICK**/
+
+.slick-dotted ul{
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.slick-dotted li{
+    display: inline-block;
+    margin:0 7px;
+}
+
+.slick-dotted button:focus{
+    outline: 0;
+}
+
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #cacaca;
+    border-width: 0;
+    background: #cacaca;
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button{
+    background: black;
+    color: black;
+}
+
+.slick-slide:focus{outline: none;}
+
+/**FIM ESTILOS PLUCGIN SLICK**/
+
+/**PRODUTOS WRAPPER**/
+
+.prod-wrapper{
+    /*
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid: 100px auto;
+    -
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.prod-big{
+    text-align: center;
+}
+
+.prod-big-image img{
+    border: 10px solid rgba(187, 187, 187, 0.322);
+    margin-top: 50px;
+    width: 80%;
+    height: 700px;
+}
+
+.prod-big-pagamento{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.prod-big-pagamento button{
+    padding: 10px;
+}
+
+.prod-big-pagamento button a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.prod-pagamento-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prod-pagamento-single{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.prod-pagamento-single i{
+    margin-top: 25px;
+    font-size: 50px;
+}
+
+.prod-pagamento-single a{
+    color: black;
+}
+
+
+
+/**PRODUTOS WRAPPER**/
+
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+.footer-text{
+    color: rgb(212, 211, 211);
+    text-align: center;
+}
+
+.footer-text p{
+    font-size: 15px;
+}
+
+.footer-text p > b{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.footer-text p > b > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    .prod-big-image img{
+        width: 90%;
+        height: 500px;
+    }
+    .social-media{bottom: 6rem;}
+}
+
+@media screen and (max-width: 500px){
+    .prod-big-image img{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/***/
+/*<!--//--------------------------By HS Corp-------------------------------//-->
+<!--//---------------------------@hs.corp-------------------------------//-->
+<!--//-----------------------hscorpp@gmail.com-------------------------------//-->*/
