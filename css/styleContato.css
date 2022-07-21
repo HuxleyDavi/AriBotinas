@@ -207,6 +207,19 @@ section.contato{
     padding: 8px;
     margin: 4px;
 }
+.sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.sociais a{
+    font-size: 50px;
+    margin-left: 50px;
+    color: black;
+    cursor: pointer;
+}
 
 /***/
 

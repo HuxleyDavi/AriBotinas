@@ -185,6 +185,8 @@ section.prod{padding: 70px;}
     align-items: center;
     flex-wrap: wrap;
 }
+.mobnone{display: flex;}
+.desknone{display: none;}
 .prod-single{border:10px solid white;margin-bottom: 20px;text-align: center;}
 .prod-single-img{width: 250px;height: 150px;}
 .prod-single-img img{width: 100%;height: 100%;}
@@ -289,6 +291,10 @@ section.contato{
     .social-media{
         bottom: 6rem;
     }
+}
+@media screen and (max-width: 500px){
+	.mobnone{display: none;}
+	.desknone{display: flex;}
 }
 
 /*<!--//--------------------------By HS Corp-------------------------------//-->
